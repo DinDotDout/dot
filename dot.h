@@ -277,7 +277,7 @@ internal inline void PrintDebug(const PrintDebugParams* params, const char* fmt,
 #if defined(DOT_COMPILER_MSVC)
 #define alignof(T) __alignof(T)
 #elif defined(DOT_COMPILER_CLANG)
-#define alignof(T) __alignof(T)
+#define alignof(T) __alignof__(T)
 #elif DOT_COMPILER_GCC
 #define alignof(T) __alignof__(T)
 #else
